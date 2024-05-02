@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  მოდულარობა
-//
-//  Created by Luka Gujejiani on 02.05.24.
-//
-
 import UIKit
 
 @main

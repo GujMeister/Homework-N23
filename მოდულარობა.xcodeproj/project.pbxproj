@@ -98,9 +98,9 @@
 		85A95DC72BE3C7C200E37863 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				85A95DBD2BE3C72E00E37863 /* Info.plist */,
 				85A95DAF2BE3C72C00E37863 /* AppDelegate.swift */,
 				85A95DB12BE3C72C00E37863 /* SceneDelegate.swift */,
+				85A95DBD2BE3C72E00E37863 /* Info.plist */,
 			);
 			path = App;
 			sourceTree = "<group>";

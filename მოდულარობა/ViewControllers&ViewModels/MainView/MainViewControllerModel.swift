@@ -2,13 +2,14 @@ import Foundation
 import SimpleNetworking
 
 class MainViewControllerModel {
-    
+    // MARK: - Properties
     var catFacts: [Datum] = [] {
         didSet { onCatFactsUpdated?() }
     }
 
     var onCatFactsUpdated: (() -> Void)?
     
+    // MARK: - Functions
     public func didLoad() {
         getFacts()
     }
@@ -33,7 +34,7 @@ class MainViewControllerModel {
             }
         }
     }
-
+    // MARK: - Gathering only cat facts
     private func fetchOnlyCatFacts(from urls: [String]) {
         let group = DispatchGroup()
         
