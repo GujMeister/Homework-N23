@@ -1,0 +1,15 @@
+{
+  "originHash" : "19e5ed6de8abd015aa55bddf4b1b1b9fe509851132d387b5a3f81eeae7eb244f",
+  "pins" : [
+    {
+      "identity" : "simplenetworking",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/GujMeister/SimpleNetworking.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "9be186ad616726caedd6d1c273f3e1382d8810ec"
+      }
+    }
+  ],
+  "version" : 3
+}

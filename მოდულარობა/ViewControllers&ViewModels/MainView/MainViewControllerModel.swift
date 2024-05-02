@@ -1,4 +1,5 @@
 import Foundation
+import SimpleNetworking
 
 class MainViewControllerModel {
     
@@ -17,7 +18,7 @@ class MainViewControllerModel {
     }
 
     private func fetchAllCatFacts() {
-        fetchData(from: "https://catfact.ninja/facts", resultType: CatFactAPIResponse.self) { [weak self] result in
+        WebService().fetchData(from: "https://catfact.ninja/facts", resultType: CatFactAPIResponse.self) { [weak self] result in
             switch result {
             case .success(let response):
                 if !response.links.isEmpty {
@@ -38,7 +39,7 @@ class MainViewControllerModel {
         
         for url in urls {
             group.enter()
-            fetchData(from: url, resultType: CatFactModel.self) { [weak self] result in
+            WebService().fetchData(from: url, resultType: CatFactModel.self) { [weak self] result in
                 defer { group.leave() }
                 
                 switch result {
